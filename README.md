@@ -55,4 +55,3 @@ Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ..
 - [Baidu AI Studio](https://aistudio.baidu.com)
 - [ERNIE AI Developer Challenge](https://baiduernieai.devpost.com/)
 
-## 📦 Repository Contents
