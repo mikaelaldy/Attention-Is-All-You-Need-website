@@ -328,6 +328,88 @@
         }
 
         /* ------------------- */
+        /* --- Footer --- */
+        /* ------------------- */
+        .page-footer {
+            margin-top: 5rem;
+            padding: 3rem 0 2rem 0;
+            border-top: 2px solid var(--border-color);
+            background: var(--bg-secondary);
+            border-radius: 12px;
+        }
+        
+        .footer-content {
+            max-width: 100%;
+        }
+        
+        .footer-about {
+            margin-bottom: 2rem;
+        }
+        
+        .footer-about h3 {
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        
+        .footer-about p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .footer-divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: 2rem 0;
+        }
+        
+        .footer-author {
+            text-align: center;
+        }
+        
+        .made-by {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+            background: var(--bg-secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+        }
+        
+        .social-links a i {
+            font-size: 1.2rem;
+        }
+
+        /* ------------------- */
         /* --- Responsive Design --- */
         /* ------------------- */
         @media (max-width: 1200px) {
@@ -377,6 +459,19 @@
             }
             h2 { font-size: 1.75rem; }
             h3 { font-size: 1.3rem; }
+            
+            .page-footer {
+                padding: 2rem 1rem 1.5rem 1rem;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .social-links a {
+                justify-content: center;
+            }
         }
 
     </style>
@@ -608,6 +703,36 @@
                     <li>Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016.</li>
                 </ol>
             </section>
+
+            <footer class="page-footer">
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <h3>About This Project</h3>
+                        <p>This interactive web presentation was created for the <strong>ERNIE AI Developer Challenge</strong>. Using <strong>PaddleOCR-VL</strong> for PDF extraction and <strong>ERNIE AI</strong> for web design generation, this project transforms the groundbreaking "Attention Is All You Need" paper into a modern, accessible format.</p>
+                        <p>The goal was to explore the power of combining AI models for document transformation and to make seminal research papers more accessible to everyone.</p>
+                    </div>
+                    
+                    <div class="footer-divider"></div>
+                    
+                    <div class="footer-author">
+                        <p class="made-by">Made with ❤️ by <strong>Mikael Aldy</strong></p>
+                        <div class="social-links">
+                            <a href="https://github.com/mikaelaldy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mikaelaldy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.mikacend.xyz/" target="_blank" rel="noopener noreferrer" aria-label="Personal Website">
+                                <i class="fas fa-globe"></i>
+                                <span>Website</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
     </div>
 
