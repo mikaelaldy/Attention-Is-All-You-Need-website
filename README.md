@@ -4,7 +4,7 @@ An interactive, beautifully designed web presentation of the groundbreaking "Att
 
 ## 🌐 Live Demo
 
-[View the Interactive Paper](https://[your-username].github.io/[repo-name]/)
+[View the Interactive Paper](https://mikaelaldy.github.io/Attention-Is-All-You-Need-website/)
 
 ## 📄 About
 
